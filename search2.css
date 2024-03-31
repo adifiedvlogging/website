@@ -72,6 +72,6 @@ body
 
 @media screen and(max-width:650px){
     .body{
-        height:200vh;
+        height:400vh;
     }
 }
