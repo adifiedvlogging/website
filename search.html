@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>search in javascript</title>
+<head>
+    <link rel="stylesheet" href="search2.css"></link>
+
+</head>
+<body>
+<div class="wrapper">
+
+<div class="search" style="text-align: center;">
+<h1>MY VIDEOS SECTION</h1>
+<br>
+<input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+</div>
+<BR>
+<div class="my-videos">
+
+<div class="videos">
+<img src="My Videos/NICCOPARK.jpg">
+<a href="https://youtu.be/nbU77KfkfJk?si=j1BUbaJmrmEUuR5s">Nicco Park 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/KOLKATA HERITAGE.jpg">
+    <a href="https://youtu.be/4sMzwfyLZh4?si=Y0RMKcfMY73Q9bX0">Kolkata Heritage <br>River Cruise 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/CAFE EKHANTE.jpg">
+    <a href="https://youtu.be/HRwNDqa8N2s?si=TrNUGiVIoOhcsGXI">Cafe EKHANTE 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/SNOW PARK.jpg">
+    <a href="https://youtu.be/L4oxFD7uOKk?si=EXBXoK6LyQdHFqJt">Snow Park Kolkata 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/HANSESWARI TEMPLE.jpg">
+    <a href="https://youtu.be/zB48hcTZ3c0?si=7N0aty4BV1R1TSGi">Hanseswari Temple 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/Bolpur shantiniketen.jpg">
+    <a href="https://youtu.be/FFuswALPssY?si=Ni-q0iiVgBsvbikd">Bolpur Shantiniketan 2024</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/MAYAPUE 2023.jpg">
+    <a href="https://youtu.be/s5RC8i7-VZE?si=ZtISXK07nhD1tKQk">Mayapur Vedic Temple<br> 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/MAYAPUR ROUTE 2023.jpg">
+    <a href="https://youtu.be/WLFwLAGLYvs?si=pOotyEkr77AGTOnv">How To Go To Mayapur</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/AIRCRAFT MUSEUM.jpg">
+    <a href="https://youtu.be/M4aHK8ZiwjI?si=C-MDOz9fRzFlVSXv">Aircraft Museum Kolkata 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/BELGHARIA DP 2023.jpg">
+    <a href="https://youtu.be/bbmXsGqI0n4?si=IZgqa-7OIxApli3l">Belgharia Durga Puja <br> preparation 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/KALYANI ITI DP2023.jpg">
+    <a href="https://youtu.be/VGRXwLki7GY?si=oZjHvEUD0Zs2IjDM">Kalyani ITI More Durga<br> Puja preparation 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/ALIP[UR JAIL MUSEUM.jpg">
+    <a href="https://youtu.be/RFPU6QAX-Bs?si=TEt3ttoNqZtdNLuI">Alipur Jail Museum<br> Kolkata 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/JAIL MUSEUM LIGHT SHOW.jpg">
+    <a href="https://youtu.be/Ufn6vmpCaCo?si=gQ9BBJhPyGXJVDMA">Alipur Jail Museum Light<br> and sound show 2023</a>
+</div>
+
+<div class="videos">
+    <img src="My Videos/VICTORIA.jpg">
+    <a href="https://youtu.be/jejaGexR-OY?si=qCKWCnC_ibPgTh_O">Victoria Memorial Kolkata 2023</a>
+</div>
+
+
+
+<div class="videos">
+    <img src="My Videos/KUMARTULI THAKUR 2023.jpg">
+    <a href="https://youtu.be/ow5yYIz9RGs?si=H-FqMktucyxl5Yk-">Kumartuli Durga Thakur<br>  2023</a>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- javascript -->
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.videos');
+let l = document.getElementsByTagName('a');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('a')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+</body>
+</html>
